@@ -42,21 +42,25 @@ class AppPages {
       name: _Paths.HOME,
       page: () => HomeView(),
       binding: HomeBinding(),
+      transition: Transition.fadeIn,
     ),
     GetPage(
       name: _Paths.KATEGORI,
       page: () => KategoriView(),
       binding: KategoriBinding(),
+      transition: Transition.fadeIn,
     ),
     GetPage(
       name: _Paths.SCHEDULE,
       page: () => ScheduleView(),
       binding: ScheduleBinding(),
+      transition: Transition.fadeIn,
     ),
     GetPage(
       name: _Paths.PROFILE,
       page: () => ProfileView(),
       binding: ProfileBinding(),
+      transition: Transition.fadeIn,
     ),
   ];
 }
