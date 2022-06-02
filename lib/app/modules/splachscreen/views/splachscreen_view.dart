@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+
+import 'package:get/get.dart';
 import 'package:hr_flutter/constants/assets_path.dart';
-import 'package:hr_flutter/constants/colors.dart';
 
-class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+import '../controllers/splachscreen_controller.dart';
 
+class SplachscreenView extends GetView<SplachscreenController> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Color(0xff07736F),
         body: Center(
           child: Container(
             height: 104,
