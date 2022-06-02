@@ -8,6 +8,9 @@ abstract class Routes {
   static const GETSTARTED = _Paths.GETSTARTED;
   static const SPLACHSCREEN = _Paths.SPLACHSCREEN;
   static const LOGIN = _Paths.LOGIN;
+  static const KATEGORI = _Paths.KATEGORI;
+  static const SCHEDULE = _Paths.SCHEDULE;
+  static const PROFILE = _Paths.PROFILE;
 }
 
 abstract class _Paths {
@@ -17,4 +20,7 @@ abstract class _Paths {
   static const GETSTARTED = '/getstarted';
   static const SPLACHSCREEN = '/splachscreen';
   static const LOGIN = '/login';
+  static const KATEGORI = '/kategori';
+  static const SCHEDULE = '/schedule';
+  static const PROFILE = '/profile';
 }
