@@ -11,6 +11,7 @@ abstract class Routes {
   static const KATEGORI = _Paths.KATEGORI;
   static const SCHEDULE = _Paths.SCHEDULE;
   static const PROFILE = _Paths.PROFILE;
+  static const DETAIL_JADWAL = _Paths.DETAIL_JADWAL;
 }
 
 abstract class _Paths {
@@ -23,4 +24,5 @@ abstract class _Paths {
   static const KATEGORI = '/kategori';
   static const SCHEDULE = '/schedule';
   static const PROFILE = '/profile';
+  static const DETAIL_JADWAL = '/detail-jadwal';
 }

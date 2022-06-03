@@ -27,6 +27,7 @@ class Palette {
   static const pearlLusta = Color(0xffFCF3E4);
   static const greenSoldig = Color(0xff07736F);
   static const redSoldig = Color(0xffD35D6E);
+  static const greyBackground = Color(0xffF6F6F6);
 }
 
 class AppFontStyle {

@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../app/modules/detail_jadwal/bindings/detail_jadwal_binding.dart';
+import '../app/modules/detail_jadwal/views/detail_jadwal_view.dart';
 import '../app/modules/getstarted/bindings/getstarted_binding.dart';
 import '../app/modules/getstarted/views/getstarted_view.dart';
 import '../app/modules/home/bindings/home_binding.dart';
@@ -20,7 +22,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.HOME;
+  static const INITIAL = Routes.DETAIL_JADWAL;
 
   static final routes = [
     GetPage(
@@ -61,6 +63,11 @@ class AppPages {
       page: () => ProfileView(),
       binding: ProfileBinding(),
       transition: Transition.fadeIn,
+    ),
+    GetPage(
+      name: _Paths.DETAIL_JADWAL,
+      page: () => DetailJadwalView(),
+      binding: DetailJadwalBinding(),
     ),
   ];
 }
