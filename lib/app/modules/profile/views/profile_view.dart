@@ -15,6 +15,9 @@ class ProfileView extends GetView<ProfileController> {
       TextStyle(fontSize: 25, color: Colors.white, fontWeight: FontWeight.bold);
   final styleTwo = TextStyle(fontSize: 20, color: Colors.white);
   final styleThree = TextStyle(color: Colors.white);
+  final styleFour = TextStyle(fontSize: 20);
+  final styleFive = TextStyle(
+      fontSize: 30, fontWeight: FontWeight.bold, color: Palette.greenSoldig);
 
   @override
   Widget build(BuildContext context) {
@@ -79,12 +82,50 @@ class ProfileView extends GetView<ProfileController> {
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(15)),
-                    child: Column(
-                      children: [],
+                    child: Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Sisa Cuti",
+                            style: GoogleFonts.montserrat(textStyle: styleFour),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                "90",
+                                style: GoogleFonts.montserrat(
+                                    textStyle: styleFive),
+                              ),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Text(
+                                "Hari",
+                                style: GoogleFonts.montserrat(
+                                    textStyle: styleFive),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
-              )
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                    primary: Palette.redSoldig,
+                    minimumSize: const Size.fromHeight(50),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15))),
+                child: Text(
+                  ' Masuk ',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
             ],
           ),
           bottomNavigationBar: BottomNavigationBar(
