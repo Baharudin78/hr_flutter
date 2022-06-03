@@ -114,17 +114,26 @@ class ProfileView extends GetView<ProfileController> {
                   ),
                 ),
               ),
-              ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                    primary: Palette.redSoldig,
-                    minimumSize: const Size.fromHeight(50),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15))),
-                child: Text(
-                  ' Masuk ',
-                  style: TextStyle(color: Colors.white),
-                ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Text("Version 1.2"),
+                  Padding(
+                    padding: const EdgeInsets.all(15),
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                          primary: Palette.redSoldig,
+                          minimumSize: const Size.fromHeight(50),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15))),
+                      child: Text(
+                        ' Keluar ',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

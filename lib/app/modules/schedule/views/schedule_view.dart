@@ -12,8 +12,9 @@ class ScheduleView extends GetView<ScheduleController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ScheduleView'),
+        title: Text('Jadwal'),
         centerTitle: true,
+        backgroundColor: Palette.greenSoldig,
       ),
       body: Center(
         child: Text(
